@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <!-- below script for including header and footer files in all other files using js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- product details page start -->
+    <div class="product_details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/product/details/product-details-1.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <div class="veg_details">
+                        <h3><b>Vetgetable’s Package</b></h3>
+                        <span>$750.00</span>
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
+                            vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
+                            quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
+                    </div>
+                    <div class="veg_btns">
+                        <div class="quantity">
+                            <div class="product_quantity" style="width: 100%;">
+                                <span class="dec qtybtn">-</span>
+                                <input type="text" value="1">
+                                <span class="inc qtybtn">+</span>
+                            </div>
+                        </div>
+                        <div class="veg_cart_btn">
+                            <button class="cart_btn">Add to cart</button>
+                        </div>
+                        <div class="veg_wish_btn">
+                            <a href="#"><i class="fa fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="pro_details">
+                        <ul>
+                            <li><b>Availability</b><span>In stock</span></li>
+                            <li><b>Shipping</b><span>01 day shipping. <samp>Free pickup today</samp></span></li>
+                            <li><b>Weight</b><span>0.5 kg</span></li>
+                            <li><b>Share on</b>
+                                <div class="share">
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-pinterest-p"></i>
+                                    </a>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="product-desc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <ul>
+                                    <li class="active" id="veg_desc">Description</li>
+                                    <li id="veg_info">Information</li>
+                                    <li id="veg_reviews">Reviews (1)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description" id="desc">
+                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.
+
+                        Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
+                </div>
+                <div class="information" id="info">
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+                </div>
+                <div class="reviews" id="reviews">
+                    <p> review Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <h3 class="related_pro">Related Product</h3>
+            </div>
+            <div class="row" id="org_show">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="bag_img" style="height:268px;background-image: url(img/featured/feature-1.jpg);">
+                            <div class="heart_cart">
+                                <ul>
+                                    <li><span><a href=""><i class="fa fa-heart"></i></a></i></span></li>
+                                    <li><a href=""><i class="fa fa-shopping-cart"></i></a></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Crab Pool Security</p>
+                            <p class="card-text">$300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="bag_img" style="height:268px;background-image: url(img/featured/feature-8.jpg);">
+                            <div class="heart_cart">
+                                <ul>
+                                    <li><span><a href=""><i class="fa fa-heart"></i></a></i></span></li>
+                                    <li><a href=""><i class="fa fa-shopping-cart"></i></a></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Crab Pool Security</p>
+                            <p class="card-text">$300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="bag_img" style="height:268px;background-image: url(img/featured/feature-2.jpg);">
+                            <div class="heart_cart">
+                                <ul>
+                                    <li><span><a href=""><i class="fa fa-heart"></i></a></i></span></li>
+                                    <li><a href=""><i class="fa fa-shopping-cart"></i></a></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Crab Pool Security</p>
+                            <p class="card-text">$300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="bag_img" style="height:268px;background-image: url(img/featured/feature-3.jpg);">
+                            <div class="heart_cart">
+                                <ul>
+                                    <li><span><a href=""><i class="fa fa-heart"></i></a></i></span></li>
+                                    <li><a href=""><i class="fa fa-shopping-cart"></i></a></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Crab Pool Security</p>
+                            <p class="card-text">$300</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product details page end -->
+    <div id="footer"></div>
+    <script>
+ $(function () {
+          $(".product-desc ul li").click(function () {
+                $(".product-desc ul li").removeClass("active");
+                $(this).addClass("active");
+             });
+        });
+
+         $("#info").hide();
+            $("#reviews").hide();
+         $("#veg_desc").on('click',function(){
+           $("#info").hide();
+            $("#reviews").hide();
+            $("#desc").show();
+
+        })
+        $("#veg_info").on('click',function(){
+            // $(this).hide();
+           
+            $("#info").show();
+            $("#reviews").hide();
+            $("#desc").hide();
+
+        })
+        $("#veg_reviews").on('click',function(){
+            // $(this).hide();
+            $("#info").hide();
+            $("#reviews").show();
+            $("#desc").hide();
+
+        })
+         /*-------------------
+		Quantity change
+	--------------------- */
+    $(function () {
+        
+        var proQty = $('.product_quantity');
+        // proQty.prepend('<span class="dec qtybtn">-</span>');
+        // proQty.append('<span class="inc qtybtn">+</span>');
+        proQty.on('click', '.qtybtn', function () {
+            var $button = $(this);
+            var oldValue = $button.parent().find('input').val();
+            if ($button.hasClass('inc')) {
+                var newVal = parseFloat(oldValue) + 1;
+            } else {
+                // Don't allow decrementing below zero
+                if (oldValue > 0) {
+                    var newVal = parseFloat(oldValue) - 1;
+                } else {
+                    newVal = 0;
+                }
+            }
+            $button.parent().find('input').val(newVal);
+        });
+    })(jQuery);
+    </script>
+</body>
+
+</html>

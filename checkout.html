@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKOUT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+ <!-- below script for including header and footer files in all other files using js -->
+ <script src="https://code.jquery.com/jquery-3.3.1.js"
+ integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+ </script>
+<script>
+ $(function () {
+     $("#header").load("header.html");
+     $("#footer").load("footer.html");
+ });
+
+</script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- checkout page start -->
+    <div class="checkout">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bill-D">
+                        <h3><b>Billing Details</b></h3>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-8">
+                
+                    <form action="">
+                        <div class="row">
+                          
+                                <div class="col-lg-6 bill-form">
+                                    <label>First Name<span>*</span></label>
+                                    <input type="text" class="form-control" placeholder="" required>
+                                </div>
+                                <div class="col-lg-6 bill-form">
+                                    <label>last Name <span>*</span></label>
+                                    <input type="text" class="form-control" placeholder="" required>
+                                </div>
+                           
+                      
+                        <div class="col-lg-12 bill-form">
+                            <label>Address <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="Street Address" required> 
+                        </div>
+                        <div class="col-lg-12 bill-form">
+                            <label>City/Town <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="col-lg-12 bill-form">
+                            <label>Country/State <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="col-lg-12 bill-form">
+                            <label>Pincode/Zip <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="col-lg-6 bill-form">
+                            <label>Phone Number<span>*</span></label>
+                            <input type="text" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="col-lg-6 bill-form">
+                            <label>Email <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="" required>
+                        </div>
+                    </div>
+                    </form>
+                
+                  
+                </div>
+                <div class="col-lg-4 bill-form">
+                    <div class="bill-box">
+                        <div class="row">
+                            <div class="bill-O">
+                                <h3>Your Order</h3>
+                            </div>
+                            <div class="checkout_pro_orders">
+                               Products<span>Total</span>
+                               <ul>
+                                <li>Vegetables Package <span>$75.99</span></li>
+                                <li>Fresh Vegetable <span>$155.00</span></li>
+                                <li>Organic Bananas <span>$88.99</span></li>
+                               </ul>
+                               <div class="checkout_subtotals">
+                                Subtotals<span>$750.99</span>
+                               </div>
+                               <div class="checkout_totals">
+                                Total<span>$750.99</span>
+                               </div>
+                            </div>
+                           <div class="checkout_payment">
+                            <input type="checkbox"  class="form-check-input" id="paypal">
+                            <label>Paypal</label>
+                            <input type="checkbox"  class="form-check-input" id="paypal">
+                            <label>Payment Checkout</label>
+                           </div>
+                           <div class="payment_btn">
+                            <button class="order_btn">PLACE ORDER</button>
+                           </div>
+                            
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- checkout page end -->
+    <div id="footer"></div>
+</body>
+</html>
